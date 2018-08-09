@@ -1,10 +1,78 @@
+.bgimage {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 10%, 0 45%);
+    clip-path: polygon(0 0, 100% 0, 100% 10%, 0 45%);
+    background-color:turquoise;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+}
+.bgstrip{
+    -webkit-clip-path: polygon(0 50%, 100% 14%, 100% 10%, 0 45%);
+    clip-path: polygon(0 50%, 100% 14%, 100% 10%, 0 45%);
+    background-color:#848484;
+    position:absolute;
+    z-index:-10;
+    height:100vh;
+    width:100vw;
+}
+.bskew{
+    -webkit-clip-path: polygon(0 90%, 100% 55%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 90%, 100% 55%, 100% 100%, 0% 100%);
+    background-color:turquoise;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+
+}
+
 td {
-    width: 100px;
-    height: 70px;
+    width: 200px;
+    height: 110px;
     text-align: center;
+    color:#848484;
+    font-size:20px;
+    background-color: white;
 }
 
 .inputfields {
     width: 100%;
-    height: 55px;
+    height: 80px;
+    border: none;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #848484;
+    border-radius:10px;
+    font-weight:600;
+    font-family:cursive;
+}
+.inputfields:focus {
+    border: 1px solid #848484;
+    text-overflow: clip;
+}
+h1{
+    color: #848484;
+    font-size: 85px;
+    font-weight: 900;
+    padding-top: 3px;
+    padding-bottom:30px;
+    text-decoration: underline dashed #848484;
+    font-family:cursive;
+}
+.date{
+    font-weight:800;
+    color: #71CEC5;
+    background-color:#E8E8E8;
+    font-size: 25px;
+    padding-bottom:5px;
+    padding-top:3px;
+    padding-left:0px;
+    padding-right:0px;
+    text-decoration: underline dashed #848484;
+    font-family:cursive;
 }
